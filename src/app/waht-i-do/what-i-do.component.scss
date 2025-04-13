@@ -1,0 +1,28 @@
+.what-i-do {
+  background-image: linear-gradient(to right top, #051f4e, #230a3a 95%);
+  padding: 4rem 1rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 6rem 2rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 8rem 3rem;
+  }
+}
+
+.section-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 3rem;
+  }
+}

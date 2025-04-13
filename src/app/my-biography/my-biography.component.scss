@@ -1,0 +1,44 @@
+.my-resume {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .my-resume {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .resume {
+    align-items: center;
+  }
+}

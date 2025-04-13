@@ -1,0 +1,97 @@
+.my-resume {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding-top: 20px;
+
+}
+
+.resume {
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title{
+  align-items: center;
+  justify-content: left;
+  display: flex;
+}
+
+.content{
+  font-size: larger;
+width: 150px;
+  border-radius: 25px;
+  background-color:rgba(255, 255, 255, 0.2) ;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.line-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.line {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.line.active {
+  background-color: #5ab2ff;
+  width: 13px;
+  height: 13px;
+  background-image: linear-gradient(90deg, #5ab2ff, #66ffff);
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-arrow {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.nav-arrow:hover {
+  color: #5ab2ff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-arrow mat-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,32 @@
+<div class="row my-resume">
+  <div class="row">
+   <div class="resume">
+    <div class="tab-content">
+      <ng-container [ngSwitch]="selectedIndex">
+        <ng-container *ngSwitchCase="0">
+          <app-hard-skills></app-hard-skills>
+        </ng-container>
+        <ng-container *ngSwitchCase="1">
+          <app-soft-skill></app-soft-skill>
+        </ng-container>
+      </ng-container>
+    </div>
+  <div class="navigation-container">
+    <button class="nav-arrow" (click)="prevTab()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+
+    <div class="line-indicators">
+      <div
+        class="line"
+        *ngFor="let tab of tabs; let i = index"
+        [class.active]="selectedIndex === i"
+      ></div>
+    </div>
+
+    <button class="nav-arrow" (click)="nextTab()">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+</div>
+</div>

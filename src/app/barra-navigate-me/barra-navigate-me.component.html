@@ -1,0 +1,38 @@
+<div class="col-md-12">
+<div class="line-indicators">
+  <div
+    class="line"
+    *ngFor="let tab of tabs; let i = index"
+    [class.active]="selectedIndex === i"
+  ></div>
+</div>
+</div>
+
+<div class="col-md-12">
+<div class="custom-tabs">
+  <div
+    class="tab"
+    *ngFor="let tab of tabs; let i = index"
+    [class.active]="selectedIndex === i"
+    (click)="selectTab(i)"
+  >
+    {{ tab.label }}
+  </div>
+</div>
+
+<div class="tab-content">
+  <ng-container [ngSwitch]="selectedIndex">
+    <ng-container *ngSwitchCase="0">
+      <app-my-biography></app-my-biography>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="1">
+      <app-my-skill></app-my-skill>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="2">
+      <app-my-resume></app-my-resume>
+    </ng-container>
+  </ng-container>
+</div>
+</div>

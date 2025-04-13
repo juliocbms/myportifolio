@@ -1,0 +1,80 @@
+<section class="what-i-do" id="portifolio">
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-12 text-center">
+        <h1 class="section-title">Portifólio</h1>
+        <div class="tab-content">
+          <ng-container [ngSwitch]="selectedIndex">
+            <ng-container *ngSwitchCase="0">
+              <div class="project">
+                <div class="title">
+                  <h1>Barber Shop Management System</h1>
+                </div>
+                <div class="video-container">
+                  <video class="portfolio-video" controls muted loop>
+                    <source src="assets/imagens/video.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                  </video>
+                </div>
+                <div class="desc">
+                  <p>Full-stack app for barber appointment scheduling. Built with Spring Boot and Angular, featuring JWT authentication, user registration, booking system, and admin dashboard. Backend is Dockerized and documented with Swagger; frontend uses reactive forms and responsive design.</p>
+                </div>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/posts/juliocbmss_java-springboot-angular-activity-7310986459153338368-Ma70?utm_source=share&utm_medium=member_desktop&rcm=ACoAADzfpIMB7KrhYPXP1qzO3FtKTB2PcXcJhJA" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://github.com/juliocbms/minhabarbeariafront" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://github.com/juliocbms/Minhabarbearia" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </ng-container>
+            <!--
+            <ng-container *ngSwitchCase="1">
+             <div class="project">
+                <div>
+                  <img class="imagem" src="assets/imagens/1712508574517.jpg" alt="">
+                </div>
+                <div class="desc">
+                  <p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem consequatur aliquid sint illum consequuntur voluptate necessitatibus voluptas maiores corrupti beatae accusantium ipsum officiis doloribus mollitia placeat explicabo rem illo?</p>
+                </div>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/juliocbmss/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://github.com/juliocbms" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </ng-container>
+            -->
+          </ng-container>
+        </div>
+         <!--
+        <div class="navigation-container">
+          <button class="nav-arrow" (click)="prevTab()">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+
+          <div class="line-indicators">
+            <div
+              class="line"
+              *ngFor="let tab of tabs; let i = index"
+              [class.active]="selectedIndex === i"
+            ></div>
+          </div>
+
+          <button class="nav-arrow" (click)="nextTab()">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</section>

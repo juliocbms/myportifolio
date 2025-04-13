@@ -1,0 +1,86 @@
+.my-resume {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.skills {
+
+  width: calc(50% - 10px);
+  padding: 15px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+
+  &.active {
+    background-color: #0a0a3d;
+    color: white;
+  }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text{
+  color: white;
+  text-decoration: none;
+}
+
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.title {
+
+  font-size: 1.1em;
+}
+
+.data {
+  color: skyblue;
+  font-style: italic;
+  background-color: #040838;
+  border-radius: 25px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+height: 35px;
+}
+
+.universidade {
+  color: skyblue;
+  margin-bottom: 10px;
+  align-items: start;
+  justify-content: left;
+  display: flex;
+}
+
+.description {
+  line-height: 1.5;
+  color:white;
+  text-align: left;
+  width: 100%;
+
+}
+
+@media (max-width: 768px) {
+  .skills {
+    width: 100%;
+  }
+}
