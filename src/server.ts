@@ -4,15 +4,15 @@ import { APP_BASE_HREF } from '@angular/common';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-// Caminhos de dist e index
+
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
 const browserDistFolder = resolve(serverDistFolder, '../browser');
 const indexHtml = join(serverDistFolder, 'index.server.html');
 
-// Criar o CommonEngine
+
 const commonEngine = new CommonEngine();
 
 export async function netlifyCommonEngineHandler(request: Request, context: any): Promise<Response> {
-  // Renderizar a aplicação Angular
+
   return await render(commonEngine);
 }

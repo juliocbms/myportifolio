@@ -63,6 +63,10 @@
   }
 }
 @media (max-width: 768px) {
+  .my-resume{
+    margin-left: 10px;
+  }
+
   .skills-container {
     flex-direction: column;
     gap: 15px;
