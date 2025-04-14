@@ -1,24 +1,43 @@
-.footer{
-  background-image: linear-gradient(to  top, #051f4e, #230a3a 200%);
+.footer {
+  background-image: linear-gradient(to top, #051f4e, #230a3a 200%);
   align-items: center;
   justify-content: center;
   display: flex;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-
+  padding: 15px;
+  flex-direction: column;
+  text-align: center;
 }
 
-.contact{
+.contact {
   padding-left: 20px;
   font-size: 25px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.contact>p{
+.contact > p {
   padding-top: 12px;
   padding-left: 10px;
   color: white;
   font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    font-size: 15px;
+    padding-left: 0;
+  }
+
+  .contact > p {
+    font-size: 11px;
+    padding-left: 0;
+    padding-top: 2px;
+  }
 }
