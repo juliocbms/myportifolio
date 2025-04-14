@@ -36,9 +36,17 @@
   .my-resume {
     flex-direction: row;
     height: auto;
+    margin-left: 10px;
+
+  }
+  .row > p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 
   .resume {
     align-items: center;
+
   }
 }
