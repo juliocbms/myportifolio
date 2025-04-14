@@ -5,7 +5,7 @@
   display: flex;
   width: 100%;
   height: auto;
-  padding: 2rem 1rem;
+
   flex-direction: column;
   box-sizing: border-box;
 }
@@ -36,9 +36,10 @@
   .my-resume {
     flex-direction: row;
     height: auto;
-    margin-left: 10px;
+
 
   }
+
   .row > p{
     align-items: center;
     justify-content: center;
