@@ -1,8 +1,4 @@
-Claro! Aqui está um exemplo de `README.md` profissional e informativo para o seu portfólio desenvolvido em Angular:
 
----
-
-```markdown
 # 📌 Meu Portfólio Pessoal
 
 Este é o repositório do meu portfólio pessoal, desenvolvido com **Angular** e **TypeScript**, com o objetivo de apresentar minhas habilidades, trajetória profissional e projetos como desenvolvedor **frontend**.
@@ -84,8 +80,3 @@ Este projeto está sob a licença **MIT**.
 Sinta-se livre para usar, estudar e adaptar ao seu contexto.
 
 ---
-```
-
----
-
-Se quiser, posso gerar esse arquivo pronto para download também. Deseja isso?
