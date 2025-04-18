@@ -31,7 +31,7 @@ export class BarraNavigateMeComponent implements OnInit {
   tabs = [
     { label: 'BIOGRAPHY' },
     { label: 'SKILLS' },
-    { label: 'EADUCATION' }
+    { label: 'EDUCATION' }
   ];
 
   selectTab(index: number): void {
